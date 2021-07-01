@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Write a script that displays Holberton School 10 times.
+# script that displays Holberton School 10 times.
 COUNT=0
 until [ "$COUNT" -eq 10 ]; do
       echo "Holberton School"
