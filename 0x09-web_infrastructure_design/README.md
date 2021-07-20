@@ -2,7 +2,7 @@
  Foundations > System engineering & DevOps > Web stack
 
 ## Concepts
-For this project, students are expected to look at these concepts:
+For this project, look at these concepts:
 
 - DNS
 - Monitoring
@@ -11,6 +11,7 @@ For this project, students are expected to look at these concepts:
 - Load balancer
 - Server
 
+## Tasks
 0. Simple web stack
 ![Image text](
 	https://i.imgur.com/nZ4XQng.jpg
