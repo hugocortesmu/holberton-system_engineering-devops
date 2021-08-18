@@ -5,7 +5,7 @@ apt-get -y install nginx
 # 1 Return a page Holberton School
 echo "Holberton School" | tee /var/www/html/index.html
 # 2 redirection page
-TEXT="location /redirect_me {\\n return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\\n}\\n"
+TEXT="location /redirect_me {\\n return 301 https://www.youtube.com/watch?v=2zZzn-KxeRI&list=RD2zZzn-KxeRI&start_radio=1&ab_channel=LizzoMusic;\\n}\\n"
 sudo sed -i "42i $TEXT" /etc/nginx/sites-available/default
 # 3 HTTP 404 error page inclu Ceci n'est pas une page
 echo "Ceci n'est pas une page" | tee /var/www/html/404.html
