@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Install the load balancer in the Double webservers
+
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install haproxy
+sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
+sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.original
+sudo sed -i "$ a\listen 2432-lb-01\n\tbind *:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 2432-web-02 52.91.22.202 check\n\tserver 2432-web-01	34.139.156.235 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy start
+
