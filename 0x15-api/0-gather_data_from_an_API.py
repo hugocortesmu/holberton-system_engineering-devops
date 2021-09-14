@@ -25,4 +25,6 @@ if __name__ == "__main__":
             print("Employee {} is done with tasks({}/{}):"
                   .format(name, count, alltsk))
             for title in taskcompleted:
-                print('\t {}'.format(title['title']))
+                print("\t {}".format(title.get("title")))
+
+
